@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>homework 11</title>
+</head>
+<body>
+<script>
+	var arr1=[1,2,3,4];
+	
+	 var arr3=arr1.forEach(function()
+{ 
+	//console.log(index+' of arr1 is changed to '+item+'0' );
+	for(i=0;i<2;i++)
+	{arr5=arr1[i]+' of arr1 is changed to '+arr1[i]+'0';
+console.log(arr5);}
+	return (arr1[i]+' of arr1 is changed to '+arr1[i]+'0')
+
+});	
+	var arr2=arr1.map(function(item,index)
+{
+ // arr4=index+' of arr1 is changed to '+item+'00';
+ //for(i=0;i<2;i++)
+	//y=index+' of arr1 is changed to '+item+'00';
+//arr5=arr1[i]+' of arr1 is changed to '+arr1[i]+'0';
+//console.log(index+' of arr1 is changed to '+item+'00');
+
+
+
+   return (index+' of arr1 is changed to '+item+'00')
+   
+});
+
+
+
+
+
+	var obj={};
+	var	person=
+				{
+				first_name: 'vadlapally',
+				last_name: 'gouthami',
+				friends:
+				{
+					first: 'gou',
+					sec: 'gop'
+				}
+				};
+
+console.log(person.hasOwnProperty('first_name'));
+
+console.log(person.hasOwnProperty('adresss'));
+
+
+person.age=22;
+
+console.log(person);
+
+person.first_name='v'
+
+console.log(person);
+( delete person.age);
+console.log(person);
+
+var veena = Object.create(person);
+veena.friends.first='naveena';
+console.log(veena.friends);
+
+
+
+	
+	
+</script>
+</body>
+</html>

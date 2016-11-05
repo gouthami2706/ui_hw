@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>homework13</title>
+</head>
+<body>
+	<script>
+		var a=16;
+		var b=
+		{
+			fstname:'gouthami',
+			lstname:'vadla',
+			a:21,
+			age:function()
+				{return this.a;  }
+		}
+		console.log(b.age());
+		var numofyears=b.age; //we are just assigning fun
+		console.log(numofyears());
+		console.log(numofyears.call(b));
+		console.log(numofyears.call({a:22}));// assign same as like normal boject
+		console.log(numofyears.apply({a:23}));// assign same as like normal boject
+/* call and apply are same in no arguments function*/
+
+
+		function joining(x,y,z)
+		{
+			return this.u+this.v+x+y+z;
+		}
+
+		var c=
+		{
+			u:'a',
+			v:'b' 
+		}
+			console.log(joining.call(c,'c','d','e'));
+				console.log(joining.apply(c,['c','d','e']));
+		var d=joining.bind(c)
+			console.log(d('c','d','e'));//everything related to this is replaced by d
+
+
+	</script>
+
+</body>
+</html>

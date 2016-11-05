@@ -1,0 +1,86 @@
+Subject : UIClass-August-24-2016 HomeWork 11 <Name>
+1) explain about arr.forEach and arr.map . compare the differences?
+2) object and object methods (.hasOwnProperty(item))
+3) diff ways of creating an object
+4) understand about properties in object. look into about adding property, delete a property, edit property value, check if a property exists?
+5) what is prototype in object
+
+
+
+
+
+1) explain about arr.forEach and arr.map . compare the differences?
+arr.foreach(): It usally apply the function for each and every element in the array
+arr.map():It does the same thing like foreach method and returns the modified elements in a array
+2) object and object methods (.hasOwnProperty(item))
+
+
+object:An object is a collection of properties, and a property is an association between a name (or key) and a value. A property's value can be a function, in which case the property is known as a method.
+empty object {}
+object will have properties 
+each property has key and value
+objectname.propertykey gives u the required value
+object.hasOwnProperty('keyvalue') returns boolean value either true or false
+
+
+3)diff ways of creating an object:
+object literals
+defining objects normally
+objectname{ propertyname: value; }
+
+Object property names can be any string, including the empty string. If the property name would not be a valid JavaScript identifier or number, it must be enclosed in quotes. Property names that are not valid identifiers also cannot be accessed as a dot (.) property, but can be accessed and set with the array-like notation("[]").
+
+var unusualPropertyNames = {
+  "": "An empty string",
+  "!": "Bang!"
+}
+console.log(unusualPropertyNames."");   // SyntaxError: Unexpected string
+console.log(unusualPropertyNames[""]);  // An empty string
+console.log(unusualPropertyNames.!);    // SyntaxError: Unexpected token !
+console.log(unusualPropertyNames["!"]); // Bang!
+
+instead of using . for empty srting and some other special characters(!) we use '[]'
+
+---using constructor function
+u can create many objects using instance of key word new
+define object using constructor func
+
+function name(arguments)
+{
+	assign  arguments using this
+
+}
+
+using new keyword create objects
+
+arguments can be objects
+
+eg:
+var rand = new Person("Rand McKinnon", 33, "M");
+function Car(make, model, year, owner) {
+  this.make = make;
+  this.model = model;
+  this.year = year;
+  this.owner = owner;
+}
+var car1 = new Car("Eagle", "Talon TSi", 1993, rand);// rand --object
+we have owner function
+
+
+---- using object.create
+define one object
+ var fish =object.create(animal);
+
+
+
+
+5) what is prototype in object
+
+it is an object which helps in adding similar property key to various objects
+
+
+
+
+
+
+

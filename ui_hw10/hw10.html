@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>home work 10</title>
+</head>
+<body>
+<script>
+	//logical and
+	alert('&&,||');
+	var a='gt'||'22';console.log(a);
+     a='gt'||22;	console.log(a);
+	 a=''||'2';	console.log(a);
+	 a=null||undefined;	console.log(a);
+	 a='gt'&&'22';	console.log(a);
+     a='gt'&&22;	console.log(a);
+	 a=''&&'2';	console.log(a);
+	 a=null&&undefined;	console.log(a);
+
+
+if((22).toString()=='22')
+	document.write('converted to sting');
+else
+	document.write('not');
+
+var str1 ="This is string1" ;
+var str2 ="This is string2" ;
+var str3=str1+str2;  //it is not storing in stri1 default
+          document.writeln("<br>str1.charAt(0) is:" + str1.charAt(0)); 
+document.writeln("<br>str1.charcodeAt(0) is:" + str1.charCodeAt(0)); 
+document.writeln("<br>string concat is:" +str1.concat(str2)); 
+document.writeln("<br>string concat is:" +str3);
+console.log(str1.includes('is')); // it returns true or false
+
+var myString    = 'brie, pepper jack, cheddar';
+var myCapString = 'Brie, Pepper Jack, Cheddar';
+
+console.log('myString.indexOf("cheddar") is ' + myString.indexOf('cheddar'));
+// logs 19
+console.log('myCapString.indexOf("cheddar") is ' + myCapString.indexOf('cheddar'));
+// logs -1
+document.writeln("<br>"+str3.lastIndexOf("is"));
+console.log('z'.localeCompare('z'));// z comes before so we get negative value
+console.log('a'.localeCompare('z'));
+console.log('z'.localeCompare('a'));
+var regexp='This is';
+console.log(str1.match(regexp));
+
+
+var newstr = str2.replace('string2', 'Christmas');
+console.log(newstr);
+
+console.log(str1.search(myString));// if found it returns 0 else -1
+
+
+
+console.log(str1.slice(-7)); // string1 takes last 7 digits
+console.log(str1.slice(8,-1)); //
+document.write('<br>'+str1);//slice doesnot store new value
+
+
+console.log(str1.split(' '));
+console.log(str1); //it doesnot sore new value
+
+console.log(str1.substr(0,6));
+console.log(str1);
+
+console.log('GOUTHAMI'.toLowerCase());
+console.log('gouthami'.toUpperCase());
+
+
+var alpha = ['a','b','c','d'];
+document.write( "<br>"+alpha.toString());
+// both make the string elements keep togther separated by comma
+var num= [1,2,3,4];
+document.write('<br>'+num.join());
+
+document.write('<br>'+num+','+num.push('5'));// adds 5 as last element to the num
+document.write('<br>'+num.pop());//poped element is displayed=5
+document.write('<br>'+num);
+document.write('<br>'+num.shift());
+document.write('<br>'+num);
+document.write('<br>'+num.unshift(1));// it is returning how many elements after unshift
+document.write('<br>'+num);
+document.write('<br>c='+alpha.indexOf('c'))
+console.log(num);
+console.log(num.slice(0,3));// gives present num in output
+console.log(num);
+document.write('<br>'+ num.reverse());
+document.write('<br>'+num);
+var num= [1,2,3,4];
+document.write('<br>'+num.copyWithin(-2,0,2));//target,start,num of end num
+
+
+</script>
+
+</body>
+</html>

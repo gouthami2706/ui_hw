@@ -1,0 +1,25 @@
+1) constructor? new keyword? why do we use it?
+2))istanceof?
+3)prototype?
+4)this key word
+
+
+constructor
+When a function is used as a constructor (with the new keyword), its this is bound to the new object being constructed.
+
+
+new key word helps in creating new objects
+this key word behaves as the current object instance
+object.fun-- in this fun this returns object what ever it may be
+if nothing window
+
+
+prototype:
+it is a single object which is common for all objects which uses particular function
+
+instance of:
+when we r defining multiple objects using a fun
+newly made objects will be istance of fun
+
+it just return boolean value
+

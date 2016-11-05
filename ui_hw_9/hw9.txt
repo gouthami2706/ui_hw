@@ -1,0 +1,79 @@
+======     operational precedence:
+
+Operator Precedence (JavaScript) Operator precedence describes the order in which operations are performed when an expression is evaluated. Operations with a higher precedence are performed before those with a lower precedence. 
+For example, multiplication is performed before addition.
+
+
+operator with same precedence -- left to right
+
+a = b = 5 -----right to left
+
+
+
+
+=============         Two Boolean operands are strictly equal if both are true or both are false.
+Two distinct objects are never equal for either strict or abstract comparisons.
+An expression comparing Objects is only true if the operands reference the same Object.
+Null and Undefined Types are strictly equal to themselves and abstractly equal to each other.
+
+
+
+differences between == and ===
+
+equality ==   ---it just checks the value no datatype
+strict equality ===  --- it will check the value and datatype
+
+
+
+=======    differences between != and !==
+
+!== stictly inequality
+The non-identity operator returns true if the operands are not equal and/or not of the same type.
+
+!= inequality
+
+===== diff null and undefined
+
+null== undefined // true
+
+
+
+loop (for, while and do while) and conditons (if else, switch).
+
+------for loop
+for(initalization;condition;iteration)
+inittialization is optional, or we can have many statements in initialization place by seperating with commas
+
+
+Like the initialization block, the condition block is also optional. If you are omitting this expression, you must make sure to break the loop in the body in order to not create an infinite loop.
+
+-----for (var i = 0;; i++) {
+   console.log(i);
+   if (i > 3) break;
+
+
+-----Do while
+
+A good example of this is a login prompt. You put some code in a do while that asks for a username, and if it's not valid, ask them again. So you'd ask for the username in the block of code, then the condition checks if the username is valid, if it's not, it loops and asks again.
+
+ ------difference betwen for loop and while?
+
+'for' loop is generally used when you know the number of iterations beforehand. e.g. to traverse an array of 10 elements you can use for loop and increment the counter from 0 to 9(or 1 to 10 in 1 based indexing).
+On the other hand 'while' is used when you have an idea about the range of values on which to iterate, but don't know the exact number of iterations taking place.
+e.g. in a BFS
+while(!queue_q.empty())
+{
+    // remove element(s)
+    // add element(s)
+
+
+  ----The if statement executes a statement if a specified condition is true. If the condition is false, another statement can be executed.  
+
+
+---The objective of a switch statement is to give an expression to evaluate and several different statements to execute based on the value of the expression. The interpreter checks each case against the value of the expression until a match is found. If nothing matches, a default condition will be used.
+
+if no break in the switch statement it executes until it gets break statement in the cases
+
+
+https://www.quora.com/Difference-between-while-loop-and-do-while-loop
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for

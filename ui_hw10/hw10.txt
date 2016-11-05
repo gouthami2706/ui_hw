@@ -1,0 +1,35 @@
+Subject : UIClass-August-24-2016 HomeWork 10 <Name>
+1) logical and , logical or
+2) string methods (contact, split, ...)
+3) array methods (push, pop, unshift, shift, slice, splice, indexOf, lastIndexOf, forEach, map, contact, reverse, join, ...)
+
+1) logical and , logical or
+
+logical and
+statement1-&&-statement2(true:statement2 rtturns)(false:statement1 returns)
+if statement1 is true it will return statement2 value else it will return statement1
+logical or
+statement1-||-statement2(true:statement1 returns)(false:statement2 rt)
+if statement1 is false it will return statement2 value else it will return statement1
+
+2) string methods (contact, split, ...)
+
+string:The String global object is a constructor for strings, or a sequence of characters.
+charAt(); charCodeAt(); concat(); indexOf(); lastIndexof(); localCompare();
+match(); replace(); search(); slice(); split(); substr(); substring();
+toLocalLowerCase(); toLocalUpperCase(); toLowerCase(); toString(); toUpperCase(); valueOf();
+
+charCodeAt():
+Returns a number indicating the Unicode value of the character at the given index. It returns NaN if the given index is not between 0 and 1 less than the length of the string.--if T returns 84, A returns 65;
+
+
+indexOf() and case-sensitivity
+
+The following example defines two string variables. The variables contain the same string except that the second string contains uppercase letters. The first console.log() method displays 19. But because the indexOf() method is case sensitive, the string "cheddar" is not found in myCapString, so the second console.log() method displays -1.
+
+
+3)array methods (push, pop, unshift, shift, slice, splice, indexOf, lastIndexOf, forEach, map, concatt, reverse, join, ...)
+
+copy within:
+
+The copyWithin method is a mutable method. It does not alter the length of this, but will change its content and create new properties if necessary.
