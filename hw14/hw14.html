@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+ <head>
+	<title>homework 14</title>
+	<style>
+		p.cls1 {
+			text-size : 10px,
+			background color : red;
+		}
+	</style>
+</head>
+<body>
+<div id=div1>this is div1</div>
+<div class = cls2>this is div2</div>
+<div id=div1>this is div3</div>
+<div class=cls1>this is div4</div>
+<div>this is div5</div>
+<p>this is para1</p>
+<p class=cls1>this is para2</p>
+<p>this is para3</p>
+<p>this is para4</p>
+<p>this is para5</p>
+<span>this is span</span>
+<script>
+ document.querySelector('div.cls1').addEventListener('click', function(){alert('hello world');
+
+ });
+
+var a=document.getElementsByTagName('div')
+document.write(a+'<br>')
+//document.getElementsByTagname('div');
+var b=document.getElementById('div1');
+console.log(b)
+//document.getElementByClassName('cls1')
+var c=document.getElementsByClassName('cls1')
+document.write(c)
+var d= document.querySelector("div.cls1");//slects first element
+document.write(d)
+var e=document.querySelectorAll(".cls1");
+document.write(e)
+
+</script>
+
+</body>
+</html>
