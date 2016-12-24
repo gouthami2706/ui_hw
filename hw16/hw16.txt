@@ -1,0 +1,51 @@
+selectors:
+elements are selected easily and css properties can be applied using single statements.
+*- all selectors
+#id- for id seectors
+.class- for class selectors
+div, class- gives u all div and class elements.
+
+
+attribute:
+^ start with the string
+|-starts with the value
+*-substring in any place
+~- string in that without any combination
+$- ending exactly with that string
+! not equal
+
+
+
+basic filter
+animated selector: animation can be applied to selected elements.
+eq() selector: we can get eq(0), ---- elements
+
+:even selector: we will obtain even indexed elements
+:gt() selector: gt(2) gives all elements greater than 2
+: lt() selector: gives leser indexed values
+
+
+child filters
+ selector1:selector2----all child grand child elements of selector1 are selected
+ selector1>:selector2--- the imediate child of selector1 are selected
+ selector1selector2 --- and operation is performed between both selectors and we obtain the result
+
+
+ :first-child selector :-- gives first child
+ :first of type: --- gives all first elements of siblings
+ nth- child(): gives nth child depends on the index 
+ nth of type : gives all siblings of nth element
+
+
+
+content filter
+
+
+
+http://api.jquery.com/category/selectors/content-filter-selector/
+
+form filters
+http://api.jquery.com/category/selectors/form-selectors/
+
+hirarechal filters
+http://api.jquery.com/category/selectors/hierarchy-selectors/

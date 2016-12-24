@@ -1,0 +1,19 @@
+event delegation:
+when ever parent element is added a event listener and externally child elements are added same event is proceeded.
+
+what is jQuery? what is $?
+jquery is the javascript library
+jquery word can be replaced by $
+
+
+3) why do we use jquery?
+$ makes the programming easier and reduces the length of the js code.
+
+
+4) $(document).ready vs window.onload?
+$(document).ready:this statement is executed line by line so this statement is executed when it gets it turn . when some element is declared first and juery statement is declared last so this property is not applied to the statement.
+Window.onload: where as when jquery statements is declared using thisone when window is refreshed all the properties are loaded and whenever elements or attributes or tagnames are called these properties are aquired by them
+
+after dom is loaded document.ready is executed
+after all css properties and everything related to window is loaded window.onload is ececuted
+

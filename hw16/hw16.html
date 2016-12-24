@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>homework 16</title>
+	
+</head>
+<body>
+<div id="id1">this is div1</div>
+<div id="id1">this is div2</div>
+<div id="id2">this is div3</div>
+<div id="id2">this is div4</div>
+<p class="class1">this is para1</p>
+<p class="class1">this is para2</p>
+<p class="class2">this is para3</p>
+<p class="class2">this is para4</p>
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+<script>
+$( "div" ).css( "border", "3px solid red" );
+$('div[id!="id1"]').css("background","yellow");
+$( "p" ).css( "border", "3px solid blue" );
+var element= $( "*" ).length;
+$( "body" ).prepend( "<h3>" + element + " elements found</h3>" );
+</script>
+</body>
+</html>
