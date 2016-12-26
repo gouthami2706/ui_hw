@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    
+</head>
+<body>
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<script>
+		jQuery.ajax({
+			url : 'http://rest.learncode.academy/api/johnbob/friends/',
+			method : 'GET',
+	        success : function(data)
+	        {
+	        	console.log(data);
+
+	        },
+	        error : function(xhr)
+	        { console.log(xhr); }
+		})
+
+		var data = {
+	name : 'gouthami',
+      age : 0
+	}
+	jQuery.ajax({
+			url : 'http://rest.learncode.academy/api/johnbob/friends/',
+			method : 'POST',
+			data : data,
+	        success : function(data)
+	        {
+	        	console.log(data);
+
+	        },
+	        error : function(xhr)
+	        {
+              console.log(xhr);
+	        }
+		})
+
+	var data = {
+				name : 'gouthamireddy ', 
+				age : 5
+			}
+			jQuery.ajax({
+				url : 'http://rest.learncode.academy/api/johnbob/friends/586145978b3ece010076aa66', 
+				method : 'PUT',
+				data : data,
+				success : function(data) {
+					console.log(data);
+				},
+				error : function(xhr){
+					console.log(xhr);}
+			})
+	jQuery.ajax({
+			url : 'http://rest.learncode.academy/api/johnbob/friends/5861454c8b3ece010076aa65',
+			method : 'DELETE',
+			
+	        success : function(data)
+	        {console.log(data); },
+	        error : function(xhr)
+	        { console.log(xhr);}
+		})
+	</script>
+
+</body>
+</html>
