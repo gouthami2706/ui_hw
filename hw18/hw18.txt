@@ -1,0 +1,22 @@
+status codes:
+200--ok
+201--created
+202--accepted
+204--no content
+ 
+ 3xx--- this tells the client has to do more actions to complete request(redirection)
+
+400---bad request -- the server cannot send response because of unclear request
+401---when an unauthorized person tried to login
+403---the request is perfect but the server refusing to respond user can login but have no permissions to access
+404---not found-- but we can expect that in future
+
+500--- unexpected condition occured and no more specific message is suitable
+501---not implemented
+502---when one server is acting as gateway and when it doesnot get response from another server
+503---service unavailable due to overload or improper maintainance
+
+
+2) Angular JS --> 
+MVC- Model View Controller
+MVVM (Data binding)- model view viewmodel
